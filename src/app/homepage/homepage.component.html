@@ -1,0 +1,33 @@
+<div class="d-flex flex-column align-items-stretch m-0 p-0">
+    <header class="d-flex flex-column align-items-stretch justify-content-center" style="min-height: 35vh; background-image: url('../../../assets/images/WhatsApp Image 2022-08-07 at 16.07.42.jpeg'); background-position: center;">
+       <div class="d-flex justify-content-center p-2" style="border-bottom: 2px solid black; border-top: 2px solid black; background-color: #f2f2f2; width: 100wh;">
+            <h1>Welcome to PetPics</h1>
+       </div>
+    </header>
+
+    <main class="d-flex flex-column justify-content-center m-0" style="min-height: 60vh;">
+        <div class="d-flex flex-column justify-content-center m-0 border-top">
+            <h2 class="align-self-center" style="border-bottom: 2px solid black;">What is this page?</h2>
+            <div  class=" d-flex flex-column align-items-center m-5">
+                <p>In this page you can find many random pictures of dogs and cats that I found on public APIs. Also, I created it as a means to pratice the basics of Angular while looking at some cute animals :)</p>
+                <div>
+                    <p>For this litle project I used the following public APIs:</p>
+                    <ul>
+                        <li><a href="https://cataas.com/#/" class="link-dark">Cat as a service</a></li>
+                        <li><a href="https://dog.ceo/dog-api/" class="link-dark">Dog Api (Dog CEO)</a></li>
+                    </ul>
+                </div>
+                <h6>Buy them a beer!</h6>
+            </div>
+        </div>
+
+        
+        <div class="d-flex flex-column align-items-center border-top ">
+            <h2 style="border-bottom: 2px solid black;">What do you wanna see?</h2>
+            <div class="d-flex justify-content-center">   
+                <button [routerLink]="['/cats']" class="btn btn-lg btn-success m-3">Random cats</button>
+                <button [routerLink]="['/dogs']" class="btn btn-lg btn-success m-3">Random dogs</button>
+            </div>
+        </div>
+    </main>
+</div>

@@ -1,0 +1,25 @@
+<div class="d-flex flex-column align-items-stretch m-0 p-0">
+    <header class="d-flex flex-column align-items-center" style="background-color: #f2f2f2;">
+        <h1>DO YOU LIKE DOGS?</h1>
+        <h4>Look at this!</h4>
+    </header>
+
+    <main>
+        <article class="d-flex flex-column align-items-center pt-2">
+            <div class="d-flex justify-content-around"  style="max-width: 90vw;">
+                <img  *ngFor="let img of imgs" [src]="img" alt="A cute dogs's image" class="m-3" style="max-width: 25vw;">
+            </div>
+            <button (click)="ngOnInit()" class="btn btn-success">GIVE ME MORE</button>
+        </article>
+
+        <article class="d-flex flex-column align-items-center pt-3">
+            <h3>Did you find that cool?</h3>
+            <h6>Consider adopting a pet :)</h6> 
+            <ul class="d-flex justify-content-around">
+                <li class="list-group-item m-2"><a class="link-dark" href="https://www.petfinder.com/">PetFinder</a></li>
+                <li class="list-group-item m-2"><a class="link-dark" href="https://www.adoptapet.com/">Adopt a Pet</a></li>
+                <li class="list-group-item m-2"><a class="link-dark" href="https://www.adotepetz.com.br/">adotepetz</a></li>
+            </ul>
+        </article> 
+    </main>
+</div>
